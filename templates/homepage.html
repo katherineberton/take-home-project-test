@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block other_head %}{% endblock %}
+
+{% block title %}{% endblock %}
+
+{% block body %}
+    <div id="header"><h5>Homepage</h5></div>
+    <div id="login-form">
+        <form action="/login" method="POST">
+            <input type="text" name="email" id="login-email">
+            <button id="login-submit" type="submit">LOG IN</button>
+        </form>
+    </div>
+    <div id="register-form">
+    </div>
+
+    <script src="/static/js/homepage.js"></script>
+{% endblock %}
